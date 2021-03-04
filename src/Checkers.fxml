@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1069.0" prefWidth="1901.0" style="-fx-background-color: #CECECE;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gameplay">
+    <children>
+        <Pane fx:id="Panel" prefHeight="1069.0" prefWidth="1901.0" style="-fx-background-color: #CECECE;">
+            <children>
+                <ImageView fitHeight="1045.0" fitWidth="1044.0" layoutX="528.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Board.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="53.0" fitWidth="486.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Checkers.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="61.0" fitWidth="264.0" layoutX="130.0" layoutY="196.0" onMouseClicked="#StartGame" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Start.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="61.0" fitWidth="216.0" layoutX="154.0" layoutY="294.0" onMouseClicked="#Stop" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Stop.png" />
+                    </image>
+                </ImageView>
+                <Circle fill="WHITE" layoutX="1653.0" layoutY="980.0" radius="54.5" stroke="WHITE" strokeType="INSIDE" />
+                <Circle layoutX="1781.0" layoutY="980.0" radius="54.5" stroke="BLACK" strokeType="INSIDE" />
+                <Label fx:id="cntWhite" layoutX="1633.0" layoutY="956.0" text="12">
+                    <font>
+                        <Font size="36.0" />
+                    </font></Label>
+                <Label fx:id="cntBlack" layoutX="1761.0" layoutY="956.0" text="12" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font></Label>
+                <Label fx:id="WhoTurn" layoutX="1652.0" layoutY="46.0" text="White Turn" visible="false">
+                    <font>
+                        <Font name="System Bold" size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
